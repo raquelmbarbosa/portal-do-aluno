@@ -8,9 +8,9 @@ export default function App() {
     <div className="pagina">
       <Header />
 
-      {/* TODO: percorra REDACOES com .map e renderize um <RedacaoCard>
-          para cada redação, passando-a por props. Não esqueça a key. */}
-      {/* ______ complete aqui ______ */}
+      {REDACOES.map((r) => (
+        <RedacaoCard key={r.id} redacao={r} />
+      ))}
 
     </div>
   );
